@@ -1,8 +1,8 @@
-package com.siddhant.examportal;
+package com.siddhant.examportal.entity;
 
+import com.siddhant.examportal.enums.Role;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
@@ -10,6 +10,9 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "users")
 @Getter @Setter
+@NoArgsConstructor @AllArgsConstructor
+@Builder
+
 public class User {
 
     @Id

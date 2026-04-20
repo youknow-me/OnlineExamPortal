@@ -1,5 +1,6 @@
-package com.siddhant.examportal;
+package com.siddhant.examportal.repository;
 
+import com.siddhant.examportal.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
