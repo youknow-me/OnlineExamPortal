@@ -15,7 +15,7 @@ public class Exam {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long examId;
+    private long id;
 
     @Column(nullable = false)
     private String title;

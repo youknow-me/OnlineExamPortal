@@ -1,5 +1,6 @@
 package com.siddhant.examportal.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.siddhant.examportal.enums.Option;
 import jakarta.persistence.*;
 import lombok.*;
@@ -36,6 +37,7 @@ public class Question {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @JsonIgnore
     private Option correctOption;
 
     @Column(nullable = false)
